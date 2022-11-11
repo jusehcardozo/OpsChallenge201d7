@@ -1,18 +1,42 @@
+Jose Cardozo
+11/10/2022
+
+Guys, I've tried and I've failed. 
+I tried to have the script create a file for me, but something is off and I ran the command bash and it wouldn't run. Now I've got to a point where my mind is done.
+I have it saved and maybe we can get together and try to figure it out sometime soon if possible.
+Below is the copy of what i've done:
+
 #!/bin/bash
 
-# Script:                       
-# Author:                       
-# Date of latest revision:      
-# Purpose:                      
+# Script:                               Creating Directories/Arrays              
+# Author:                               Jose Cardozo           
+# Date of latest revision:              11/10/2022
+# Purpose:                              Learnining how to use arrays
 
+# Review the process for creating a new directory.
+# Create four directories using the script.
+
+mkdir dir1
+mkdir dir2
+mkdir dir3
+mkdir dir4
+
+# Load each directory path into an array.
+
+array=(dir1 dir2 dir3 dir4)
+
+# create a new .txt file within each directory by referencing the directory with array indices, not the literal directory path.
+# Test & validate.
+
+touch /home/jusehcardozo/test/testfile1.txt
 # Declare global variables
-files=("f1.txt" "f2.txt" "f3.txt" "f4.txt" "f5.txt")
+# files=("f1.txt" "f2.txt" "f3.txt" "f4.txt" "f5.txt")
 
 # Declare functions
 
 # Main
-echo ${files[4]}
-echo ${files[3]}
-echo ${files[2]}
-echo ${files[1]}
-echo ${files[0]}
+# echo ${files[4]}
+# echo ${files[3]}
+# echo ${files[2]}
+# echo ${files[1]}
+# echo ${files[0]}
