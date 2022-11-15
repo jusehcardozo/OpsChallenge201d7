@@ -1,25 +1,23 @@
-if [ condition ] ; then
-
-# Command(s)
-
-fi
-# Example script: Conditional ("if") statement with the single condition (Source: Linuxhint)
-
 #!/bin/bash
-echo "Enter a number"
-read n
-if [ $n -lt 100 ]; then
-printf "$n is less than 100\n"
-fi
-# Example script: Conditional ("if") statement with multiple conditions (Source: Linuxhint)
 
-#!/bin/bash
-echo "Enter username"
-read un
-echo "Enter password"
-read pw
-if [[ "$un" == "admin" && "$pw" = "superuser" ]]; then
-echo "Login Successful."
+# Script:                       Tough Script
+# Author:                       Jose Cardozo
+# Date of latest revision:      11/14/2022
+# Purpose:                      Headaches lol
+
+
+    if [[ -f $filecreate ] ]
+then
+    echo "$filecreate exists as a file on your machine."
+fi
+    if [[ ! -f $filecreate ]]
+then
+    echo "$filecreate does not exist as a file on your machine."
+fi
+
+if [[ ! -f $filecreate]]
+then
+    mkdir $filecreate
 fi
 
 will work on this with some help from the others.
